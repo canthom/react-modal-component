@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Popup from './lib/components/Modal';
+import React, { useState } from 'react';
 
 function App() {
+  const [btnPopup, setBtnPopup] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <button onClick={() => setBtnPopup(true)}>
+          Faire apparaître la modal
+        </button>
+      </div>
+      <Popup
+        showPopup={btnPopup}
+        setShowPopup={() => setBtnPopup(false)}
+        overlay={true}
+      >
+        Employee Created!
+      </Popup>
+    </>
   );
 }
 
