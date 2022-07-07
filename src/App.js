@@ -7,10 +7,15 @@ function App() {
 
   return (
     <>
-      <div className="App">
-        <button onClick={() => setBtnPopup(true)}>
-          Faire apparaître la modal
-        </button>
+      <div
+        style={{
+          height: '100vh',
+          display: 'grid',
+          placeItems: 'center',
+        }}
+        className="App"
+      >
+        <button onClick={() => setBtnPopup(true)}>Show Modal</button>
       </div>
       <Popup
         showPopup={btnPopup}
