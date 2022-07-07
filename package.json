@@ -1,11 +1,18 @@
 {
-  "name": "modal-component",
+  "name": "modal-comp-for-react",
+  "description": "A simple modal component for React",
+  "author": "Thomas Can",
+  "keywords": [
+    "react",
+    "modal",
+    "popup",
+    "components"
+  ],
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -39,6 +46,7 @@
   "devDependencies": {
     "@babel/cli": "^7.18.6",
     "@babel/core": "^7.18.6",
-    "@babel/preset-env": "^7.18.6"
+    "@babel/preset-env": "^7.18.6",
+    "@testing-library/react": "^13.3.0"
   }
 }
