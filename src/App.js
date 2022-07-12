@@ -16,14 +16,14 @@ function App() {
         className="App"
       >
         <button onClick={() => setPopupActive(true)}>Show Modal</button>
+        <Popup
+          showPopup={btnPopup}
+          closePopup={() => setPopupActive(false)}
+          overlay={true}
+        >
+          Employee Created!
+        </Popup>
       </div>
-      <Popup
-        showPopup={btnPopup}
-        closePopup={() => setPopupActive(false)}
-        overlay={true}
-      >
-        Employee Created!
-      </Popup>
     </>
   );
 }
