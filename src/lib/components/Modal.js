@@ -13,7 +13,7 @@ function Popup(props) {
         {props.customButton ? (
           <MyBtn />
         ) : (
-          <button className="popup__btn" onClick={props.setShowPopup}>
+          <button className="popup__btn" onClick={props.closePopup}>
             X
           </button>
         )}

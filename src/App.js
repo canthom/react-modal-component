@@ -3,7 +3,7 @@ import Popup from './lib/components/Modal';
 import React, { useState } from 'react';
 
 function App() {
-  const [btnPopup, setBtnPopup] = useState(false);
+  const [btnPopup, setPopupActive] = useState(false);
 
   return (
     <>
@@ -15,11 +15,11 @@ function App() {
         }}
         className="App"
       >
-        <button onClick={() => setBtnPopup(true)}>Show Modal</button>
+        <button onClick={() => setPopupActive(true)}>Show Modal</button>
       </div>
       <Popup
         showPopup={btnPopup}
-        setShowPopup={() => setBtnPopup(false)}
+        closePopup={() => setPopupActive(false)}
         overlay={true}
       >
         Employee Created!
