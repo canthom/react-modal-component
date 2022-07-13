@@ -10,7 +10,7 @@ const StyledModal = styled.div`
   justify-content: center;
   align-items: center;
   background-color: ${(props) =>
-    props.overlay === true ? 'rgba(0,0,0,0.5)' : 'transparent'};
+    props.overlay ? 'rgba(0,0,0,0.5)' : 'transparent'};
 
   .popup__inner {
     position: relative;

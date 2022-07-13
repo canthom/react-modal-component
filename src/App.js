@@ -1,9 +1,9 @@
 import './App.css';
-import Popup from './lib/components/Modal';
+import { Popup } from './lib/components/Modal';
 import React, { useState } from 'react';
 
 function App() {
-  const [btnPopup, setPopupActive] = useState(false);
+  const [popupActive, setPopupActive] = useState(false);
 
   return (
     <>
@@ -17,9 +17,9 @@ function App() {
       >
         <button onClick={() => setPopupActive(true)}>Show Modal</button>
         <Popup
-          showPopup={btnPopup}
+          showPopup={popupActive}
           closePopup={() => setPopupActive(false)}
-          overlay={true}
+          overlay
         >
           Employee Created!
         </Popup>

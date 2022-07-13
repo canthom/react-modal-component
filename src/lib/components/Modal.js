@@ -1,11 +1,10 @@
 import React from 'react';
 import StyledModal from './Modal.styled';
 
-function Popup(props) {
-  console.log(props.overlay === true);
+export function Popup(props) {
   const MyBtn = props.customButton;
   return props.showPopup ? (
-    <StyledModal>
+    <StyledModal overlay={props.overlay}>
       <div className="popup__inner">
         {props.customButton ? (
           <MyBtn />
@@ -23,4 +22,4 @@ function Popup(props) {
   );
 }
 
-export default Popup;
+// export default Popup;

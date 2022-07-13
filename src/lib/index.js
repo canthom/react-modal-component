@@ -1,3 +1,5 @@
-import Popup from './components/Modal';
+// import Popup from './components/Modal';
 
-export { Popup };
+// export { Popup };
+
+export * from './components';

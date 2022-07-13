@@ -4,15 +4,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _components = require("./components");
+var _Modal = require("./Modal.js");
 
-Object.keys(_components).forEach(function (key) {
+Object.keys(_Modal).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
-  if (key in exports && exports[key] === _components[key]) return;
+  if (key in exports && exports[key] === _Modal[key]) return;
   Object.defineProperty(exports, key, {
     enumerable: true,
     get: function get() {
-      return _components[key];
+      return _Modal[key];
     }
   });
 });
