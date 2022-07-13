@@ -26,3 +26,23 @@
   ```
 
 ## How to customize the Modal ?
+
+- You can pass any children you want inside the component ?
+  ```
+  <Popup
+    showPopup={popupActive}
+    closePopup={() => setPopupActive(false)}
+    >
+      Employee Created!
+  </Popup>
+  ```
+- By default, there is an overlay behind the popup. You can remove it by changing the overlay props to false
+  ```
+  <Popup
+   showPopup={popupActive}
+   closePopup={() => setPopupActive(false)}
+   overlay={false}
+   >
+     Employee Created!
+  </Popup>
+  ```
